@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap");
+* {
+  margin: 0;
+}
+
+.green {
+  background: #1ed760;
+}
+
+.green-text {
+  color: #1ed760;
+}
+
+.green-border {
+  border-bottom-color: #1ed760;
+}
+
+.header {
+  @apply font-extrabold uppercase lg:text-4xl text-3xl my-10 lg:text-center text-left px-6;
+}
+
+.heading {
+  /* font-family: "Montserrat", sans-serif;*/
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
+}
+
+.paragraph {
+  font-family: "Roboto", sans-serif;
+}
+
+.gr {
+}
+.gr:hover {
+  border-bottom-color: #1ed760;
+  color: #1ed760;
+}
