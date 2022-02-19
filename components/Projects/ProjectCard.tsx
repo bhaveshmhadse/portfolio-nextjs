@@ -17,7 +17,13 @@ const ProjectCard = ({ index }: { index: number }) => {
     return () => handleOrientation();
   }, []);
 
-  return <div className=' my-20 lg:my-10 mx-4 block lg:flex '>{orientation.map(eachObj => eachObj)}</div>;
+  return (
+    <div className='flex items-center justify-center'>
+      <div className='h-auto lg:w-3/4 '>
+        <div className=' my-20 lg:my-10 mx-4 block lg:flex '>{orientation.map(eachObj => eachObj)}</div>
+      </div>
+    </div>
+  );
 };
 
 const ProjectImage = () => {

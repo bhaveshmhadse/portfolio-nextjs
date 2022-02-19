@@ -19,13 +19,12 @@ const ProjectsSection = () => {
   }, []);
 
   return (
-    <div className='h-auto'>
+    <div className='h-auto   items-center justify-center'>
       <SectionHeader title='Projects' />
-
-      {projects.map((eachProject, index) => (
-        <ProjectCard key={eachProject} index={doFlip ? index : 2} />
-      ))}
-
+        {projects.map((eachProject, index) => (
+            <ProjectCard key={eachProject} index={doFlip ? index : 2} />
+          ))}
+ 
       <DecorativeLineSeperator />
     </div>
   );
