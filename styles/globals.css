@@ -10,6 +10,7 @@
 * {
   margin: 0;
   scroll-behavior: smooth;
+  /* overflow-y: auto; */
 }
 
 .green {
@@ -36,6 +37,19 @@
 
 .paragraph {
   font-family: "Poppins", sans-serif;
+}
+
+.zoomer {
+  transform: scale(1);
+  overflow: hidden;
+  transition: all ease-in-out .3s;
+}
+
+.zoomer:hover {
+  transform: scale(2);
+  /* zoom: -120%;
+   */
+  scale: 2;
 }
 
 .gr {
