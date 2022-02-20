@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import { useEffect } from "react";
+import CertificatesSection from "../components/Certificates/CertificatesSection";
 
 import HeroSection from "../components/Hero/HeroSection";
 // import LayoutFlow from "../components/Journey/Flow";
@@ -18,6 +19,7 @@ const Home: NextPage = () => {
       <ProjectsSection />
       <SkillsSection />
       <Journey />
+      <CertificatesSection />
       <div className='w-full h-screen'></div>
     </div>
   );
