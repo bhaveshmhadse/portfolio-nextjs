@@ -1,6 +1,6 @@
 import { useState, useCallback, useEffect } from "react";
 
-import ReactFlow, { ReactFlowProvider, addEdge, removeElements, isNode, Position } from "react-flow-renderer";
+import ReactFlow, { ReactFlowProvider, addEdge, isNode, removeElements, Position } from "react-flow-renderer";
 
 import dagre from "dagre";
 
