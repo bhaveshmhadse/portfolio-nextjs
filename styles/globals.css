@@ -13,6 +13,10 @@
   /* overflow-y: auto; */
 }
 
+.rotate {
+  transform: rotate(125deg);
+}
+
 .green {
   background: #1ed760;
 }
@@ -42,7 +46,7 @@
 .zoomer {
   transform: scale(1);
   overflow: hidden;
-  transition: all ease-in-out .3s;
+  transition: all ease-in-out 0.3s;
 }
 
 .zoomer:hover {
