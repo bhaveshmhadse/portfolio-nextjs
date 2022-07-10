@@ -21,7 +21,7 @@ const SkillsContainer = ({ arrayOfSkills }) => {
           <div className='w-full  h-auto grid grid-cols-2 lg:grid-cols-3 lg:gap-x-10 lg:gap-y-10 gap-x-2 gap-y-8'>
             {arrayOfSkills.map(eachObj => (
               <div className='lg:p-0 w-full h-full lg:py-2 lg:px-0 p-2 px-6 flex flex-col items-center justify-center' key={Math.random().toString()}>
-                <img className=' w-full lg:w-1/2 zoomerTwo roundedlg drop-shadow-lg  rounded-2xl' src={`skills/${eachObj.title}.svg`} alt='Image' />
+                <img className=' w-1/2 lg:w-1/2 zoomerTwo roundedlg drop-shadow-lg  rounded-xl' src={`skills/${eachObj.title}.svg`} alt='Image' />
                 <span className='pt-6 select-none  font-black text-zinc-400 uppercase whitespace-nowrap'>{eachObj.title}</span>
               </div>
             ))}
@@ -33,3 +33,5 @@ const SkillsContainer = ({ arrayOfSkills }) => {
 };
 
 export default SkillsContainer;
+("");
+("");

@@ -6,6 +6,8 @@ const IndividualProject = ({ projectName }: any) => {
   let [arr, setarr] = useState(projectsAndParts[projectName] || [1, 2, 3]);
 
   useEffect(() => {
+    console.log("projectsAndPars[projectName] is:", projectsAndParts[projectName]);
+
     setarr(projectsAndParts[projectName]);
   }, []);
 
@@ -20,7 +22,9 @@ const IndividualProject = ({ projectName }: any) => {
               <div className='w-full h-auto lg:h-1/4 grid grid-cols-2 lg:grid-cols-3 lg:gap-x-0 lg:gap-y-0 gap-x-4 gap-y-3'>
                 {arr.map(eachObj => (
                   <div className='lg:p-0 w-full h-full lg:py-2 p-2 flex flex-col items-center justify-center' key={Math.random().toString()}>
-                    <img className='lg:w-5/6 w-full zoomerTwo rounded-lg drop-shadow-lg' src={eachObj.imageUrl} alt='Image' />
+                    {/* <img className='lg:w-5/6 w-full zoomerTwo rounded-lg drop-shadow-lg' src={eachObj.imageUrl} alt='Image' /> */}
+                    <img className=' w-1/2 lg:w-1/2 zoomerTwo roundedlg drop-shadow-lg  rounded-xl' src={`${eachObj.imageUrl}`} alt='Image' />
+
                     <span className='pt-3 select-none  font-black text-zinc-400 uppercase whitespace-nowrap'>{eachObj.heading}</span>
                   </div>
                 ))}
