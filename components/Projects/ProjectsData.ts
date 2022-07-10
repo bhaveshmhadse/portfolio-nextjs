@@ -37,14 +37,14 @@ const projectsArray = [
   },
 ];
 
-const codigoParts = ["axle rod", "boom 12", "bucket", "connecting rod", "front body", "rear body", "rim", "rod", "tyre"];
+const codigoParts = ["reactjs", "css3", "express", "nodejs", "mongodb", "firebase", "git", "github", "heroku", "npm"];
 const miniParts = ["arm", "base", "battery", "electrical unit", "fan blade", "motor", "spacer", "spinner", "top", "unit 2"];
 
 const getDetailedPartsObjectArray = (title, arrayOfParts: string[]) => {
   return arrayOfParts.map(eachPartName => ({
     heading: eachPartName,
-    imageUrl: "bhaveshProfile.jpg",
-    // imageUrl: `${title}/${eachPartName}.jpg`,
+    // imageUrl: "bhaveshProfile.jpg",
+    imageUrl: `${eachPartName}.svg`,
     description: "This One of My projects Toy codigo Wheel Loader. As Of Dimensions are 1/38 th of Original codigo few Dimensions were of my own and remaining were from search...! There are 14-16 parts as follows  Rear Body, Differential, Front Body, Axle Rod, Boom Cylinder, Boom Rod, Connecting Rod, Rocker arm Cylinder, Rocker Arm Rod, Rocker Arm, Screw, BOOM, Excavator Bucket, Rim, Tyre, and 3 Minor Assembly + 1 full Assembly",
   }));
 };
