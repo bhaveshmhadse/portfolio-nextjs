@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
-import { Skills } from "../../controllers/getSkills";
+import { useState } from "react";
+import { Skills } from "./SkillData";
 import SkillsContainer from "./SkillsContainer";
 
 const SkillSet = () => {

@@ -1,5 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
+
 import { isEven } from "../../controllers/helperFuntions";
 
 const Skill = ({ title, index }: any) => {
