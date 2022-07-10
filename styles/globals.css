@@ -74,3 +74,8 @@ body {
 .smooth-image {
   image-rendering: optimizeSpeed;
 }
+.d {
+  color: rgb(224, 118, 86);
+  fill: red;
+}
+/* 224, 118, 86224, 118, 86  */

@@ -14,14 +14,14 @@ const SkillsContaine = ({ arrayOfSkills }: { arrayOfSkills: any[] }) => {
 
 const SkillsContainer = ({ arrayOfSkills }) => {
   return (
-    <div className='flex items-center pt-11 mb-8 justify-center lg:mt-auto h-auto lg:w-full lg:h-screen '>
-      <div className=' px-4 block lg:flex items-center justify-center'>
+    <div className='flex  items-center lg:pt-8 pt-11 mb-8 justify-center lg:mt-auto h-auto  w-full  '>
+      <div className='lg:px-0 px-4 h-auto block lg:w-11/12  items-center justify-center '>
         {/* <ProjectImageMain projectName={projectName} /> */}
-        <div className='flex w-full items-center justify-center'>
-          <div className='w-full h-auto lg:h-1/4 grid grid-cols-2 lg:grid-cols-3 lg:gap-x-0 lg:gap-y-0 gap-x-2 gap-y-8'>
+        <div className='flex w-full items-center lg:items-start lg:justify-start justify-center'>
+          <div className='w-full  h-auto grid grid-cols-2 lg:grid-cols-3 lg:gap-x-10 lg:gap-y-10 gap-x-2 gap-y-8'>
             {arrayOfSkills.map(eachObj => (
-              <div className='lg:p-0 w-full h-full lg:py-2 p-2 flex flex-col items-center justify-center' key={Math.random().toString()}>
-                <img className='lg:w-5/6 w-full zoomerTwo rounded-lg drop-shadow-lg' src={`skills/${eachObj.title}.png`} alt='Image' />
+              <div className='lg:p-0 w-full h-full lg:py-2 lg:px-0 p-2 px-6 flex flex-col items-center justify-center' key={Math.random().toString()}>
+                <img className=' w-full lg:w-1/2 zoomerTwo roundedlg drop-shadow-lg  rounded-2xl' /*src={`skills/${eachObj.title}.png`}*/ src='skills/javascript-plain.svg' alt='Image' />
                 <span className='pt-6 select-none  font-black text-zinc-400 uppercase whitespace-nowrap'>{eachObj.title}</span>
               </div>
             ))}
