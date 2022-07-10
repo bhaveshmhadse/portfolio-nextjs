@@ -8,15 +8,11 @@ const Certficates = ({ arrayOfCertificates }) => {
   let [certificateDetailsArray, setcertificateDetailsArray] = useState<any>(certificatesArray);
 
   useEffect(() => {
-    console.log("arrayOfCertificates is:", arrayOfCertificates);
-
     setcertificateDetailsArray(certificatesArray);
-
-    console.log("certificatesArray is:", certificatesArray);
   }, []);
 
   return (
-    <div className='flex items-center justify-center mb-20'>
+    <div className='flex items- center justify-center mb-20'>
       <div className='h-auto lg:w-5/6 mt-10'>
         <div className=' grid lg:grid-cols-3 grid-cols-1 h-auto gap-20 drop-shadow-lg mx-4 lg:mx-0 '>{certificateDetailsArray && certificateDetailsArray.map(eachObj => <CertificateCard certificateTopic={eachObj.certificateTopic} certificateInfo={eachObj.certificateInfo} certificateImageUrl={eachObj.certificateImageUrl} certificateLink={eachObj.certificateLink} key={Math.random().toString()} />)}</div>
       </div>
