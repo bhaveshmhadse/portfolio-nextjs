@@ -1,0 +1,60 @@
+Projects:
+
+    SEMESTER PROJECTS
+
+    1) CODIGO
+        • Built MERN stack Web Application for end users to stream
+        programming courses and compile their code online.
+        • Designed Back-end REST API and implemented various
+        functionalities like logins/sign-ups, OTP service, quizzes, certificate
+        emailing functionality upon completion of course and clearing
+        the quiz.
+        • Designed Course cards, dashboard, enrolled course cards, and
+        Implemented various routes/endpoints to handle different
+        scenarios.
+        • Taught programming courses on various languages and
+        frameworks.
+
+        link: https://codigoindia.netlify.app/
+
+    2) MUSIC BAY:
+        A JavaFX Music Application built to listen to music flawlessly.
+        With good USER INTERFACE it contains various screens and artist pages.
+        One can listen to music based upon his/her favourite genre or artist. 
+
+        link: https://github.com/bhaveshmhadse/Music-Bay
+        
+
+    3) MINI
+        • Implemented a voice assistant as well as Intelligent search Engine.
+        • Performs day to day tasks like messaging a friend, arrange a google
+          meet,take a selfie,make/readnotes, etc
+
+        link: https://github.com/bhaveshmhadse/Mini
+
+    
+    PERSONAL PROJECTS
+
+    1) PATHFINDING VISUALIZER
+        • Built ReactJS Application featuring how path finding graph
+        algorithms works
+        • Implemented BFS (Breadth First Search) and DFS (Depth First
+        Search)
+
+        link: https://pathfinding-visualizer-bhaveshmhadse.vercel.app/
+
+    2) SORTING VISUALIZER
+        • Built a VanillaJS website featuring various Sorting Algorithms.
+        • Visually shows how sorting works by computer.
+        • Implemented Bubble Sort, Insertion sort, Selection sort, Quick-sort.
+
+        link: https://bhaveshmhadse.github.io/Sorting-Visualizer/
+
+    3) SAIDEEP CLASSES
+        • Built an e-commerce web application for saideep classes to manage their admission, exams and student details.
+        • One can take admission to classes through this portal and his/her identity will be saved in database for further use.
+        • Exam details are filled up by admin for each exams conducted and this data gets stored in database.
+        • Students also have their own section where they can upload their image while admission.
+        • Implemented the functionality to get all students details including his term-work/exam details in well organised fashion. 
+
+        link: https://saideep-classes.netlify.app/

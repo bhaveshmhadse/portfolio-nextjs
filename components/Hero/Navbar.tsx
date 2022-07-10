@@ -46,13 +46,13 @@ const Navbar = () => {
             </motion.button>
           </Link>
 
-          <Link href='/About'>
+          <Link href='/about'>
             <motion.button variants={item} className={`${getSelectedButton() == "About" ? " bg-rose-400 text-black " : " text-rose-400 bg-transparent "} m-auto px-5 rounded-lg font-semibold text-sm p-2 hover:bg-rose-400 hover:text-black duration-300`} onClick={() => localStorage.setItem("selectedButton", "About")}>
               About
             </motion.button>
           </Link>
 
-          <Link href='/'>
+          <Link href='/projects'>
             <motion.button variants={item} className={`${getSelectedButton() == "Projects" ? " bg-rose-400 text-black " : " text-rose-400 bg-transparent "} m-auto px-5 rounded-lg font-semibold text-sm p-2 hover:bg-rose-400 hover:text-black duration-300`} onClick={() => localStorage.setItem("selectedButton", "Projects")}>
               Projects
             </motion.button>

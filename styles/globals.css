@@ -12,7 +12,9 @@
   scroll-behavior: smooth;
   /* overflow-y: auto; */
 }
-
+body {
+  @apply bg-zinc-800 m-0;
+}
 .rotate {
   transform: rotate(125deg);
 }
@@ -30,7 +32,7 @@
 }
 
 .header {
-  @apply font-extrabold uppercase lg:text-6xl text-5xl my-10 lg:text-center text-left px-6;
+  @apply text-zinc-300 font-extrabold uppercase lg:text-6xl text-5xl my-10 lg:text-center text-left px-6;
 }
 
 .heading {
@@ -48,7 +50,13 @@
   overflow: hidden;
   transition: all ease-in-out 0.3s;
 }
-
+.zoomerTwo {
+}
+.zoomerTwo:hover {
+  transform: scale(1.02);
+  overflow: hidden;
+  transition: all ease-in-out 0.3s;
+}
 .zoomer:hover {
   transform: scale(2);
   /* zoom: -120%;
@@ -61,4 +69,8 @@
 .gr:hover {
   border-bottom-color: #1ed760;
   color: #1ed760;
+}
+
+.smooth-image {
+  image-rendering: optimizeSpeed;
 }
