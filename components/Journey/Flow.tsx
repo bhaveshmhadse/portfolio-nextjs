@@ -85,7 +85,7 @@ const LayoutFlow = () => {
           Change Layout
         </button>
 
-        <ReactFlowProvider>{show && <ReactFlow className='mt-24 bg-zinc-800/40' paneMoveable={true} defaultZoom={zoom} zoomOnPinch={true} elements={elements} onConnect={onConnect} onElementsRemove={onElementsRemove} />}</ReactFlowProvider>
+        <ReactFlowProvider>{show && <ReactFlow className='mt-24 bg-zinc-900/20' paneMoveable={true} defaultZoom={zoom} zoomOnPinch={true} elements={elements} onConnect={onConnect} onElementsRemove={onElementsRemove} />}</ReactFlowProvider>
       </div>
     </div>
   );
