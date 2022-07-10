@@ -38,7 +38,10 @@ const projectsArray = [
 ];
 
 const codigoParts = ["reactjs", "css3", "express", "nodejs", "mongodb", "firebase", "git", "github", "heroku", "npm"];
-const miniParts = ["arm", "base", "battery", "electrical unit", "fan blade", "motor", "spacer", "spinner", "top", "unit 2"];
+const miniParts = ["python", "numpy", "pandas", "vscode"];
+const saideepClassesParts = ["nextjs", "nodejs", "npm", "mongodb", "github", "linux", "heroku", "css3", "javascript", "express", "vscode"];
+const sortingVisualizerParts = ["javascript", "html5", "css3", "github", "vscode"];
+const pathfindingVisualizerParts = ["reactjs", "css3", "tailwindcss", "github", "vscode"];
 
 const getDetailedPartsObjectArray = (title, arrayOfParts: string[]) => {
   return arrayOfParts.map(eachPartName => ({
@@ -52,7 +55,9 @@ const getDetailedPartsObjectArray = (title, arrayOfParts: string[]) => {
 const projectsAndParts = {
   codigo: getDetailedPartsObjectArray("codigo", codigoParts),
   mini: getDetailedPartsObjectArray("mini", miniParts),
-  "pathfinding visualizer": getDetailedPartsObjectArray("codigo", codigoParts),
+  "sorting visualizer": getDetailedPartsObjectArray("sorting visualizer", sortingVisualizerParts),
+  "pathfinding visualizer": getDetailedPartsObjectArray("pathfinding visualizer", pathfindingVisualizerParts),
+  "saideep classes": getDetailedPartsObjectArray("saideep classes", saideepClassesParts),
 };
 
 export { projectsArray, projectsAndParts };

@@ -55,7 +55,7 @@ const ProjectInfo = ({ heading, description, liveDemoUrl, githubUrl }) => {
   return (
     <div className='w-full  p-4 flex items-center justify-center '>
       <div className=' w-full'>
-        <h1 className='text-4xl  mb-5 green-text font-extrabold uppercase'> {heading} </h1>
+        <h1 className='text-5xl mb-5 green-text font-extrabold uppercase'> {heading} </h1>
         <p className='mb-4 text-justify lg:pr-4 font-bold text-gray-500 leading-loose paragraph'> {description} </p>
         <div className='flex w-full '>
           <AnimatePresence>

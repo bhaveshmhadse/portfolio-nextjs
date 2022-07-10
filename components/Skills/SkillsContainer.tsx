@@ -1,3 +1,4 @@
+import { globalSkillsHash } from "./Languages";
 import Skill from "./Skill";
 
 const SkillsContaine = ({ arrayOfSkills }: { arrayOfSkills: any[] }) => {
@@ -20,8 +21,8 @@ const SkillsContainer = ({ arrayOfSkills }) => {
         <div className='flex w-full items-center lg:items-start lg:justify-start justify-center'>
           <div className='w-full  h-auto grid grid-cols-2 lg:grid-cols-3 lg:gap-x-10 lg:gap-y-10 gap-x-2 gap-y-8'>
             {arrayOfSkills.map(eachObj => (
-              <div className='lg:p-0 w-full h-full lg:py-2 lg:px-0 p-2 px-6 flex flex-col items-center justify-center' key={Math.random().toString()}>
-                <img className=' w-1/2 lg:w-1/2 zoomerTwo roundedlg drop-shadow-lg  rounded-xl' src={`skills/${eachObj.title}.svg`} alt='Image' />
+              <div className='lg:p-0 w-full bg-red-5  h-full lg:py-2 lg:px-0 p-2 px-10 flex flex-col items-center justify-center' key={Math.random().toString()}>
+                <section className='w-full lg:w-2/6 zoomerTwo roundedlg drop-shadow-lg rounded-2xl'>{globalSkillsHash[eachObj.title]}</section>
                 <span className='pt-6 select-none  font-black text-zinc-400 uppercase whitespace-nowrap'>{eachObj.title}</span>
               </div>
             ))}

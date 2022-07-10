@@ -28,7 +28,7 @@ const PersonalInformation = () => {
                   <motion.h1 animate={{ x: 0, y: [-100, 0], opacity: 1 }} initial={{ opacity: 0 }} transition={{ delay: 0.5 }} className='   text-6xl  leading-snug -translate-y-10 lg:translate-y-0 font-black text-justify'>
                     Hello, I am Bhavesh, <span className='green-text'>a Developer.</span>
                   </motion.h1>
-                  <motion.button animate={{ x: 0, y: [100, 0], opacity: 1 }} initial={{ opacity: 0 }} transition={{ delay: 1 }} className='mt-6 lg:text-3xl text-5xl w-full lg:w-1/4 py-2  green rounded-lg lg:px-6 lg:py-2 text-black font-black '>
+                  <motion.button animate={{ x: 0, y: [100, 0], opacity: 1 }} initial={{ opacity: 0 }} transition={{ delay: 1 }} className='mt-6 text-zinc-800 lg:text-3xl text-5xl w-full lg:w-1/4 py-2  green rounded-lg lg:px-6 lg:py-2 font-black '>
                     Resume
                   </motion.button>
                 </AnimatePresence>

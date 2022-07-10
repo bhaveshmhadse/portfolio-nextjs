@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Navbar from "../Hero/Navbar";
+import { globalSkillsHash } from "../Skills/Languages";
 import { projectsAndParts } from "./ProjectsData";
 
 const IndividualProject = ({ projectName }: any) => {
@@ -7,6 +8,7 @@ const IndividualProject = ({ projectName }: any) => {
 
   useEffect(() => {
     console.log("projectsAndPars[projectName] is:", projectsAndParts[projectName]);
+    // console.log("aaaa ---", projectsAndParts[projectName]);
 
     setarr(projectsAndParts[projectName]);
   }, []);
@@ -18,12 +20,11 @@ const IndividualProject = ({ projectName }: any) => {
         <div className='flex items-center mt-8 justify-center lg:mt-auto h-auto lg:w-full lg:h-screen '>
           <div className=' px-4 block lg:flex items-center justify-center'>
             <ProjectImageMain projectName={projectName} />
-            <div className='flex w-full  px-6 items-center justify-center'>
-              <div className='w-full h-auto lg:h-1/4 grid grid-cols-2 lg:grid-cols-3 lg:gap-x-0 lg:gap-y-0 gap-x-4 gap-y-3'>
+            <div className='flex w-full lg:pt-12  px-1 items-center justify-center'>
+              <div className='w-full h-auto   lg:h-1/4 grid grid-cols-2 lg:grid-cols-3 lg:gap-x-0 lg:gap-y-0 gap-x-4 gap-y-3'>
                 {arr.map(eachObj => (
                   <div className='lg:p-0 w-full h-full lg:py-2 p-2 flex flex-col items-center justify-center' key={Math.random().toString()}>
-                    {/* <img className='lg:w-5/6 w-full zoomerTwo rounded-lg drop-shadow-lg' src={eachObj.imageUrl} alt='Image' /> */}
-                    <img className=' w-1/2 lg:w-1/2 zoomerTwo roundedlg drop-shadow-lg  rounded-xl' src={`${eachObj.imageUrl}`} alt='Image' />
+                    <section className='w-1/2 lg:w-1/2 zoomerTwo roundedlg drop-shadow-lg rounded-2xl'>{globalSkillsHash[eachObj.heading]}</section>
 
                     <span className='pt-3 select-none  font-black text-zinc-400 uppercase whitespace-nowrap'>{eachObj.heading}</span>
                   </div>
