@@ -4,7 +4,7 @@ import PersonalInformation from "./PersonalInformation";
 const HeroSection = () => {
   return (
     <div>
-      <Navbar />
+      <Navbar key={Math.random().toString()} />
       <PersonalInformation />
     </div>
   );

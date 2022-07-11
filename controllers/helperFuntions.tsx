@@ -1,5 +1,3 @@
-import axios from "axios";
-
 import { certificatesArray } from "../components/Certificates/DefaultData";
 
 const isEven = (num: number) => num % 2 == 0;

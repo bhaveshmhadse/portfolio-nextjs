@@ -7,14 +7,7 @@ const Navbar = () => {
 
   const container = {
     hidden: { opacity: 0 },
-    show: {
-      opacity: 1,
-      x: 0,
-      y: [10, 0],
-      transition: {
-        staggerChildren: 0.7,
-      },
-    },
+    show: { opacity: 1, x: 0, y: [10, 0], transition: { staggerChildren: 0.7 } },
   };
 
   const item = {
@@ -26,33 +19,35 @@ const Navbar = () => {
 
   useEffect(() => {
     if (!localStorage.getItem("selectedButton")) localStorage.setItem("selectedButton", "Home");
+
     setTimeout(() => {
       setshow(true);
     }, 1500);
   }, []);
 
   return (
-    <div style={{ background: "rgba(39, 39, 42, 0.5)" }} className='  fixed flex w-full p-2 z-50'>
+    <div key={Math.random().toString()} style={{ background: "rgba(39, 39, 42, 0.5)" }} className='  fixed flex w-full p-2 z-50'>
       <div className='flex  w-full items-center'>
         <div className='flex'>Icon</div>
       </div>
 
       {!show && <motion.div variants={container} initial='hidden' animate='show' className='flex   w-auto lg:w-2/3 float-right' />}
+
       {show && (
         <motion.div variants={container} initial='hidden' animate='show' className='flex   w-auto lg:w-2/3 float-right'>
-          <Link href='/'>
+          <Link key={Math.random().toString()} href='/'>
             <motion.button variants={item} className={`${getSelectedButton() == "Home" ? " bg-rose-400 text-black " : " text-rose-400 bg-transparent "} m-auto px-5 rounded-lg font-semibold text-sm p-2 hover:bg-rose-400 hover:text-black duration-300`} onClick={() => localStorage.setItem("selectedButton", "Home")}>
               Home
             </motion.button>
           </Link>
 
-          <Link href='/about'>
+          <Link key={Math.random().toString()} href='/about'>
             <motion.button variants={item} className={`${getSelectedButton() == "About" ? " bg-rose-400 text-black " : " text-rose-400 bg-transparent "} m-auto px-5 rounded-lg font-semibold text-sm p-2 hover:bg-rose-400 hover:text-black duration-300`} onClick={() => localStorage.setItem("selectedButton", "About")}>
               About
             </motion.button>
           </Link>
 
-          <Link href='/projects'>
+          <Link key={Math.random().toString()} href='/projects'>
             <motion.button variants={item} className={`${getSelectedButton() == "Projects" ? " bg-rose-400 text-black " : " text-rose-400 bg-transparent "} m-auto px-5 rounded-lg font-semibold text-sm p-2 hover:bg-rose-400 hover:text-black duration-300`} onClick={() => localStorage.setItem("selectedButton", "Projects")}>
               Projects
             </motion.button>

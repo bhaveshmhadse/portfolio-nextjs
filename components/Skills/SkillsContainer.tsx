@@ -1,5 +1,6 @@
-import { globalSkillsHash } from "./Languages";
 import Skill from "./Skill";
+
+import { globalSkillsHash } from "./Languages";
 
 const SkillsContaine = ({ arrayOfSkills }: { arrayOfSkills: any[] }) => {
   return (
@@ -17,7 +18,6 @@ const SkillsContainer = ({ arrayOfSkills }) => {
   return (
     <div className='flex  items-center lg:pt-8 pt-11 mb-8 justify-center lg:mt-auto h-auto  w-full  '>
       <div className='lg:px-0 px-4 h-auto block lg:w-11/12  items-center justify-center '>
-        {/* <ProjectImageMain projectName={projectName} /> */}
         <div className='flex w-full items-center lg:items-start lg:justify-start justify-center'>
           <div className='w-full  h-auto grid grid-cols-2 lg:grid-cols-3 lg:gap-x-10 lg:gap-y-10 gap-x-2 gap-y-8'>
             {arrayOfSkills.map(eachObj => (
@@ -34,5 +34,3 @@ const SkillsContainer = ({ arrayOfSkills }) => {
 };
 
 export default SkillsContainer;
-("");
-("");

@@ -12,9 +12,7 @@
   scroll-behavior: smooth;
   /* overflow-y: auto; */
 }
-html {
-  /* width: 100vw; */
-}
+
 body {
   overflow-x: hidden;
   margin: 0;
@@ -51,7 +49,6 @@ body {
 
 .heading {
   font-family: "Montserrat", sans-serif;
-  /* font-family: "Raleway", sans-serif; */
   font-weight: bolder;
 }
 
@@ -73,8 +70,6 @@ body {
 }
 .zoomer:hover {
   transform: scale(2);
-  /* zoom: -120%;
-   */
   scale: 2;
 }
 
@@ -96,4 +91,3 @@ body {
 img {
   cursor: pointer;
 }
-/* 224, 118, 86224, 118, 86  */

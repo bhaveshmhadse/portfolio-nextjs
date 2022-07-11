@@ -1,21 +1,20 @@
 import { useEffect, useState } from "react";
+
 import Navbar from "../Hero/Navbar";
+
+import { projectsAndTechStack } from "./ProjectsData";
 import { globalSkillsHash } from "../Skills/Languages";
-import { projectsAndParts } from "./ProjectsData";
 
 const IndividualProject = ({ projectName }: any) => {
-  let [arr, setarr] = useState(projectsAndParts[projectName] || [1, 2, 3]);
+  let [arr, setarr] = useState(projectsAndTechStack[projectName] || [1, 2, 3]);
 
   useEffect(() => {
-    console.log("projectsAndPars[projectName] is:", projectsAndParts[projectName]);
-    // console.log("aaaa ---", projectsAndParts[projectName]);
-
-    setarr(projectsAndParts[projectName]);
+    setarr(projectsAndTechStack[projectName]);
   }, []);
 
   return (
     <div className='flex w-full h-auto bg-zinc-800 lg:h-1/2 mb-10'>
-      <Navbar />
+      <Navbar key={Math.random().toString()} />
       {arr && (
         <div className='flex items-center mt-8 justify-center lg:mt-auto h-auto lg:w-full lg:h-screen '>
           <div className=' px-4 block lg:flex items-center justify-center'>
@@ -25,7 +24,6 @@ const IndividualProject = ({ projectName }: any) => {
                 {arr.map(eachObj => (
                   <div className='lg:p-0 w-full h-full lg:py-2 p-2 flex flex-col items-center justify-center' key={Math.random().toString()}>
                     <section className='w-1/2 lg:w-1/2 zoomerTwo roundedlg drop-shadow-lg rounded-2xl'>{globalSkillsHash[eachObj.heading]}</section>
-
                     <span className='pt-3 select-none  font-black text-zinc-400 uppercase whitespace-nowrap'>{eachObj.heading}</span>
                   </div>
                 ))}
@@ -42,10 +40,6 @@ const IndividualProject = ({ projectName }: any) => {
 const Error = ({ heading }) => <div className='flex  w-screen h-screen items-center justify-center text-center font-extrabold text-zinc-400'>{heading}</div>;
 
 const ProjectImageMain = ({ projectName }) => {
-  useEffect(() => {
-    console.log(`${projectName}/${projectName}.jpg`);
-  }, []);
-
   return (
     <div className={`w-full  lg:p-4 flex  items-center  my-10 justify-center`}>
       <div className='justify-start items-start h-auto lg:w-full w-11/12  flex'>

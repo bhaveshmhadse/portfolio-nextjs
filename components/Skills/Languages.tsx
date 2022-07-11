@@ -432,4 +432,4 @@ const globalSkillsHash = {
   chrome: <Chrome />,
 };
 
-export { Javascript, globalSkillsHash };
+export { globalSkillsHash };

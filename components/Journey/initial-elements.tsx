@@ -37,7 +37,6 @@ const arrayOfElements = [
     position,
     style: {
       fontSize: "1rem",
-      // width:"20vw",
       stroke: "skyblue",
       background: "transparent",
       color: "skyblue",
@@ -53,7 +52,6 @@ const arrayOfElements = [
     position,
     style: {
       fontSize: "1rem",
-      // width:"20vw",
       background: "transparent",
       stroke: "gold",
       color: "gold",
@@ -69,7 +67,6 @@ const arrayOfElements = [
     position,
     style: {
       fontSize: "1rem",
-      // width:"20vw",
       background: "transparent",
       stroke: "gold",
       color: "gold",
@@ -86,7 +83,6 @@ const arrayOfElements = [
     position,
     style: {
       fontSize: "1rem",
-      // width:"20vw",
       background: "transparent",
       stroke: "gold",
       color: "gold",
@@ -102,7 +98,6 @@ const arrayOfElements = [
     position,
     style: {
       fontSize: "1rem",
-      // width:"20vw",
       background: "transparent",
       color: "#1ed760",
       fontWeight: 900,
@@ -117,7 +112,6 @@ const arrayOfElements = [
     position,
     style: {
       fontSize: "1rem",
-      // width:"20vw",
       background: "transparent",
       color: "lightgray",
       fontWeight: 900,
@@ -131,7 +125,6 @@ const arrayOfElements = [
     position,
     style: {
       fontSize: "1rem",
-      // width:"20vw",
       background: "transparent",
       color: "lightgray",
       fontWeight: 900,
@@ -146,7 +139,6 @@ const arrayOfElements = [
     position,
     style: {
       fontSize: "1rem",
-      // width:"20vw",
       background: "transparent",
       color: "#1ed760",
       fontWeight: 900,
@@ -160,7 +152,6 @@ const arrayOfElements = [
     position,
     style: {
       fontSize: "1rem",
-      // width:"20vw",
       background: "transparent",
       color: "lightgray",
       fontWeight: 900,
@@ -175,7 +166,6 @@ const arrayOfElements = [
     position,
     style: {
       fontSize: "1rem",
-      // width:"20vw",
       background: "transparent",
       color: "lightgray",
       fontWeight: 900,
@@ -190,7 +180,6 @@ const arrayOfElements = [
     position,
     style: {
       fontSize: "1rem",
-      // width:"20vw",
       background: "transparent",
       color: "#1ed760",
       fontWeight: 900,
@@ -204,7 +193,6 @@ const arrayOfElements = [
     position,
     style: {
       fontSize: "1rem",
-      // width:"20vw",
       background: "transparent",
       color: "#1ed760",
       fontWeight: 900,
@@ -219,7 +207,6 @@ const arrayOfElements = [
     position,
     style: {
       fontSize: "1rem",
-      // width:"20vw",
       background: "transparent",
       color: "lightgray",
       fontWeight: 900,
@@ -233,7 +220,6 @@ const arrayOfElements = [
     position,
     style: {
       fontSize: "1rem",
-      // width:"20vw",
       background: "transparent",
       color: "magenta",
       fontWeight: 900,
@@ -247,7 +233,6 @@ const arrayOfElements = [
     position,
     style: {
       fontSize: "1rem",
-      // width:"20vw",
       background: "transparent",
       color: "magenta",
       fontWeight: 900,
@@ -261,7 +246,6 @@ const arrayOfElements = [
     position,
     style: {
       fontSize: "1rem",
-      // width:"20vw",
       background: "transparent",
       color: "magenta",
       fontWeight: 900,
@@ -276,7 +260,6 @@ const arrayOfElements = [
     position,
     style: {
       fontSize: "1rem",
-      // width:"20vw",
       background: "transparent",
       color: "magenta",
       fontWeight: 900,

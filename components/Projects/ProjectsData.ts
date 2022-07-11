@@ -36,28 +36,29 @@ const projectsArray = [
     description: "Built an e-commerce web application for saideep classes to manage their admission, exams and student details. One can take admission to classes through this portal and his/her identity will be saved in database for further use. Exam details are filled up by admin for each exams conducted and this data gets stored in database. Students also have their own section where they can upload their image while admission. Implemented the functionality to get all students details including his term-work/exam details in well organised fashion.",
   },
 ];
+const techStackHash = {
+  codigo: ["reactjs", "css3", "express", "nodejs", "mongodb", "firebase", "git", "github", "heroku", "npm"],
 
-const codigoParts = ["reactjs", "css3", "express", "nodejs", "mongodb", "firebase", "git", "github", "heroku", "npm"];
-const miniParts = ["python", "numpy", "pandas", "vscode"];
-const saideepClassesParts = ["nextjs", "nodejs", "npm", "mongodb", "github", "linux", "heroku", "css3", "javascript", "express", "vscode"];
-const sortingVisualizerParts = ["javascript", "html5", "css3", "github", "vscode"];
-const pathfindingVisualizerParts = ["reactjs", "css3", "tailwindcss", "github", "vscode"];
-
-const getDetailedPartsObjectArray = (title, arrayOfParts: string[]) => {
-  return arrayOfParts.map(eachPartName => ({
+  mini: ["python", "numpy", "pandas", "vscode"],
+  "saideep classes": ["nextjs", "nodejs", "npm", "mongodb", "github", "linux", "heroku", "css3", "javascript", "express", "vscode"],
+  "sorting visualizer": ["javascript", "html5", "css3", "github", "vscode"],
+  "pathfinding visualizer": ["reactjs", "css3", "tailwindcss", "github", "vscode"],
+};
+const getDetailedTechStackObjectArray = title => {
+  return techStackHash[title].map(eachPartName => ({
     heading: eachPartName,
     // imageUrl: "bhaveshProfile.jpg",
     imageUrl: `../skills/${eachPartName}.svg`,
-    description: "This One of My projects Toy codigo Wheel Loader. As Of Dimensions are 1/38 th of Original codigo few Dimensions were of my own and remaining were from search...! There are 14-16 parts as follows  Rear Body, Differential, Front Body, Axle Rod, Boom Cylinder, Boom Rod, Connecting Rod, Rocker arm Cylinder, Rocker Arm Rod, Rocker Arm, Screw, BOOM, Excavator Bucket, Rim, Tyre, and 3 Minor Assembly + 1 full Assembly",
+    description: "This One of My projects Toy codigo Wheel Loader. As Of Dimensions are 1/38 th of Original codigo few Dimensions were of my own and remaining were from search...! There are 14-16 TechStack as follows  Rear Body, Differential, Front Body, Axle Rod, Boom Cylinder, Boom Rod, Connecting Rod, Rocker arm Cylinder, Rocker Arm Rod, Rocker Arm, Screw, BOOM, Excavator Bucket, Rim, Tyre, and 3 Minor Assembly + 1 full Assembly",
   }));
 };
 
-const projectsAndParts = {
-  codigo: getDetailedPartsObjectArray("codigo", codigoParts),
-  mini: getDetailedPartsObjectArray("mini", miniParts),
-  "sorting visualizer": getDetailedPartsObjectArray("sorting visualizer", sortingVisualizerParts),
-  "pathfinding visualizer": getDetailedPartsObjectArray("pathfinding visualizer", pathfindingVisualizerParts),
-  "saideep classes": getDetailedPartsObjectArray("saideep classes", saideepClassesParts),
+const projectsAndTechStack = {
+  codigo: getDetailedTechStackObjectArray("codigo"),
+  mini: getDetailedTechStackObjectArray("mini"),
+  "sorting visualizer": getDetailedTechStackObjectArray("sorting visualizer"),
+  "pathfinding visualizer": getDetailedTechStackObjectArray("pathfinding visualizer"),
+  "saideep classes": getDetailedTechStackObjectArray("saideep classes"),
 };
 
-export { projectsArray, projectsAndParts };
+export { projectsArray, projectsAndTechStack, techStackHash };

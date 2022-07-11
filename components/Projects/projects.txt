@@ -48,7 +48,7 @@ Projects:
         • Visually shows how sorting works by computer.
         • Implemented Bubble Sort, Insertion sort, Selection sort, Quick-sort.
 
-        link: https://bhaveshmhadse.github.io/Sorting-Visualizer/
+        link: https://bhaveshmhadse.github.io/Sorting-Visualizer/ 
 
     3) SAIDEEP CLASSES
         • Built an e-commerce web application for saideep classes to manage their admission, exams and student details.

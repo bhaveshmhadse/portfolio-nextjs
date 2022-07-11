@@ -3,7 +3,7 @@ import SkillSet from "./SkillSet";
 
 const SkillsSection = () => {
   return (
-    <div >
+    <div>
       <div className='header'>Skills</div>
       <SkillSet />
       <DecorativeLineSeperator />
