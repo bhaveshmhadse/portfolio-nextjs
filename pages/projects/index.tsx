@@ -5,7 +5,9 @@ const ProjectPage = () => {
   return (
     <div className='flex w-full h-auto bg-zinc-800'>
       <Navbar key={Math.random().toString()} />
-      <ProjectsSection />
+      <div className='w-full h-auto my-20'>
+        <ProjectsSection />
+      </div>
     </div>
   );
 };

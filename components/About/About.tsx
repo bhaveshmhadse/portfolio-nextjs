@@ -28,7 +28,7 @@ const AboutImage = () => {
 const AboutInfo = () => {
   return (
     <div className='w-full items-center justify-center h-auto flex pt-6 pb-12 lg:flex  rounded-r-lg lg:bg-transparent mt-6'>
-      <div className='w-11/12 font-bold h-auto '>
+      <div className='w-full lg:w-11/12 font-bold h-auto '>
         <AnimatePresence>
           <motion.h1 animate={{ x: 0, y: [-100, 0], opacity: 1 }} initial={{ opacity: 0 }} transition={{ delay: 0.5 }} className=' lg:text-lg text-base lg:leading-relaxed md:leading-loose leading-normal text-justify text-gray-400 '>
             Bhavesh is an enthusiast Full stack developer who loves to build Scalable and Fast Web Applications. Born and brought up in Thane, Maharashtra (India) he aims to write clean and robust code. Armed with a constant desire to figure out why and how things work the way they do, Bhavesh started learning how to code at the age of 18 and immediately fell in love with it. In his previous role at BITGLAZE he was a Frontend Web Developer intern.He workend on developing Interactive dashboard for clients to view their data in efficient way. Apart from solving coding and algorithmic problems, he also enjoys reading books and doing workout. He strives for constant learning about new technologies and their uses and applications in real world.

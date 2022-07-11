@@ -28,13 +28,15 @@ const Navbar = () => {
   return (
     <div key={Math.random().toString()} style={{ background: "rgba(39, 39, 42, 0.5)" }} className='  fixed flex w-full p-2 z-50'>
       <div className='flex  w-full items-center'>
-        <div className='flex'>Icon</div>
+        <div className='cursor-pointer w-8 h-8 mx-2 flex items-center justify-center'>
+          <img src='bhaveshProfile.jpg' className='-rotate-90 rounded-full' alt='' />
+        </div>
       </div>
 
       {!show && <motion.div variants={container} initial='hidden' animate='show' className='flex   w-auto lg:w-2/3 float-right' />}
 
       {show && (
-        <motion.div variants={container} initial='hidden' animate='show' className='flex   w-auto lg:w-2/3 float-right'>
+        <motion.div variants={container} initial='hidden' animate='show' className='flex w-auto lg:w-2/3 float-right'>
           <Link key={Math.random().toString()} href='/'>
             <motion.button variants={item} className={`${getSelectedButton() == "Home" ? " bg-rose-400 text-black " : " text-rose-400 bg-transparent "} m-auto px-5 rounded-lg font-semibold text-sm p-2 hover:bg-rose-400 hover:text-black duration-300`} onClick={() => localStorage.setItem("selectedButton", "Home")}>
               Home
