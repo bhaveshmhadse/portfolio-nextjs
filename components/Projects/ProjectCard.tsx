@@ -73,7 +73,7 @@ const TechStack = ({ projectName }) => {
   let [techStackArray, settechStackArray] = useState(techStackHash[projectName]);
 
   return (
-    <div className=' mt-4 flex items-center justify-start'>
+    <div className=' mt-4 grid grid-cols-7 gap-4'>
       {techStackArray.map(eachObj => (
         <Link key={Math.random().toString()} href={`projects/${projectName}`}>
           <div key={Math.random().toString()} className='cursor-pointer w-8 h-8 mx-2'>
