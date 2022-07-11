@@ -21,11 +21,14 @@ const ProjectsSection = () => {
   }, []);
 
   return (
-    <div className='h-auto   items-center justify-center'>
+    <div className='h-auto w-full'>
       <SectionHeader title='Projects' />
-      {projects.map((eachProject, index) => (
-        <ProjectCard liveDemoUrl={eachProject.liveDemoUrl} githubUrl={eachProject.githubUrl} heading={eachProject.heading} description={eachProject.description} imageUrl={eachProject.imageUrl} key={Math.random().toString()} index={doFlip ? index : 2} />
-      ))}
+
+      <div className='w-full h-auto m-o'>
+        {projects.map((eachProject, index) => (
+          <ProjectCard liveDemoUrl={eachProject.liveDemoUrl} githubUrl={eachProject.githubUrl} heading={eachProject.heading} description={eachProject.description} imageUrl={eachProject.imageUrl} key={Math.random().toString()} index={doFlip ? index : 2} />
+        ))}
+      </div>
 
       <DecorativeLineSeperator />
     </div>
