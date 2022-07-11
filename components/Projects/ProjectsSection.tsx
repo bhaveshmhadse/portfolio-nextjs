@@ -24,7 +24,7 @@ const ProjectsSection = () => {
     <div className='h-auto w-full'>
       <SectionHeader title='Projects' />
 
-      <div className='w-full h-auto m-o'>
+      <div className='w-full h-auto m-o '>
         {projects.map((eachProject, index) => (
           <ProjectCard liveDemoUrl={eachProject.liveDemoUrl} githubUrl={eachProject.githubUrl} heading={eachProject.heading} description={eachProject.description} imageUrl={eachProject.imageUrl} key={Math.random().toString()} index={doFlip ? index : 2} />
         ))}

@@ -13,7 +13,6 @@ const PersonalInformation = () => {
     }, 2000);
   }, []);
 
-  return <></>;
   return (
     <div>
       <div className=' h-screen flex items-center justify-center'>

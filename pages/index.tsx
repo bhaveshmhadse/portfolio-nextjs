@@ -13,10 +13,8 @@ const Home: NextPage = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  //   return <></>;
-
   return (
-    <div className='w-full h-auto m-0 bg-zinc-800 text-white '>
+    <div className='w-full h-auto bg-zinc-800 text-white '>
       <HeroSection />
       <ProjectsSection />
       <SkillsSection />

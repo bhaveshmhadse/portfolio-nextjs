@@ -22,7 +22,7 @@ const ProjectCard = ({ index, heading, description, imageUrl, liveDemoUrl, githu
 
   return (
     <div className='flex m-0 h-auto w-full items-center justify-center'>
-      <div className='h-auto w-full lg:w-3/4 '>
+      <div className='h-auto w-full lg:w-5/6 '>
         <div className=' my-20 h-auto lg:my-10 mx-4 block lg:flex '>{orientation.map(eachObj => eachObj)}</div>
       </div>
     </div>
@@ -65,11 +65,11 @@ const ProjectInfo = ({ heading, description, liveDemoUrl, githubUrl, individualP
           </Link>
         </div>
         <div className=' mt-4 flex items-center justify-start'>
-          <Link href={`${individualProjectUrl.split(".jpg").join("/")}`}>
+          {/* <Link href={`${individualProjectUrl.split(".jpg").join("/")}`}>
             <motion.p whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} className='uppercase whitespace-nowrap mr-auto lg:pr-6 py-2 font-semibold rounded-lg text-rose-400  text-sm  '>
               Tech Stack
             </motion.p>
-          </Link>
+          </Link> */}
           {["nextjs", "tailwindcss", "linux", "docker"].map(eachObj => (
             <div key={Math.random().toString()} className='w-8 h-8 mx-2'>
               {globalSkillsHash[eachObj]}
