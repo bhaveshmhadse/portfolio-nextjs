@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 import DecorativeLineSeperator from "../Global/DecorativeLineSeperator";
+import Link from "next/link";
 
 const PersonalInformation = () => {
   let [animate, setanimate] = useState(false);
@@ -29,7 +30,9 @@ const PersonalInformation = () => {
                     Hello, I am Bhavesh, <span className='green-text'>a Developer.</span>
                   </motion.h1>
                   <motion.button animate={{ x: 0, y: [100, 0], opacity: 1 }} initial={{ opacity: 0 }} transition={{ delay: 1 }} className='mt-6 text-zinc-800 lg:text-3xl text-5xl w-full lg:w-1/4 py-2  green rounded-lg lg:px-6 lg:py-2 font-black '>
-                    Resume
+                    <a href='/resume/Bhavesh Mhadse Resume.pdf' target='_blank' rel='noreferrer' download>
+                      Resume
+                    </a>
                   </motion.button>
                 </AnimatePresence>
               )}
