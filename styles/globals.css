@@ -17,8 +17,8 @@ body {
   overflow-x: hidden;
   margin: 0;
   width: 100%;
-  background-color: red;
-  /* @apply bg-zinc-800 m-0; */
+  /* background-color: red; */
+  @apply bg-zinc-800;
 }
 .rotate {
   transform: rotate(125deg);
