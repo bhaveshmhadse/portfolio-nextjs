@@ -22,6 +22,7 @@ const CertificatesSection = () => {
 
   return (
     <div>
+      <DecorativeLineSeperator />
       <Header title={"Certificates"} />
 
       <Certficates arrayOfCertificates={certificatesArray} />

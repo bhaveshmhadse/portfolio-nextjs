@@ -79,13 +79,14 @@ const LayoutFlow = () => {
   }, []);
 
   return (
-    <div className='h-screen flex items-center justify-center  '>
-      <div className='w-5/6  h-1/2  lg:h-4/6 lg:w-11/12 bg-orange-10 -mt-96 lg:-mt-60'>
-        <button onClick={() => onLayout(layout)} className={`${true ? " animate-bounc" : " "} mb-8 float-left px-6 mr-4 py-2 font-black rounded-lg bg-blue-400 text-gray-900 text-sm hover:bg-blue-400/90`}>
+    <div className='w-full dynamic-height m-0 flex-col flex items-center justify-start  '>
+      <div className='w-5/6 lg:w-11/12 m-o    h-auto flex items-start'>
+        <button onClick={() => onLayout(layout)} className={`${true ? " animate-bounc" : " "} z-30  mr-auto px-6  py-2 font-black rounded-lg bg-blue-400 text-gray-900 text-sm hover:bg-blue-400/90`}>
           Change Layout
         </button>
-
-        <ReactFlowProvider>{show && <ReactFlow className='mt-24 bg-zinc-900/20' paneMoveable={true} defaultZoom={zoom} zoomOnPinch={true} elements={elements} onConnect={onConnect} onElementsRemove={onElementsRemove} />}</ReactFlowProvider>
+      </div>
+      <div className='w-5/6  h-5/6  lg:h-5/6 lg:w-11/12 bg-orange-10  lg:-mt-12 -mt-12 '>
+        <ReactFlowProvider>{show && <ReactFlow className='mt-24 bg-zinc-700/20 py-10 rounded-2xl' paneMoveable={true} defaultZoom={zoom} zoomOnPinch={true} elements={elements} onConnect={onConnect} onElementsRemove={onElementsRemove} />}</ReactFlowProvider>
       </div>
     </div>
   );

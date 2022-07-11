@@ -12,9 +12,9 @@ const Certficates = ({ arrayOfCertificates }) => {
   }, []);
 
   return (
-    <div className='flex items- center justify-center mb-20'>
-      <div className='h-auto lg:w-5/6 mt-10'>
-        <div className=' grid lg:grid-cols-3 grid-cols-1 h-auto gap-20 drop-shadow-lg mx-4 lg:mx-0 '>{certificateDetailsArray && certificateDetailsArray.map(eachObj => <CertificateCard certificateTopic={eachObj.certificateTopic} certificateInfo={eachObj.certificateInfo} certificateImageUrl={eachObj.certificateImageUrl} certificateLink={eachObj.certificateLink} key={Math.random().toString()} />)}</div>
+    <div className='flex items-center justify-center mb-20'>
+      <div className='h-auto lg:w-11/12 mt-10'>
+        <div className=' grid lg:grid-cols-3 grid-cols-1 h-auto lg:gap-10 gap-20 drop-shadow-lg mx-4 lg:mx-0 '>{certificateDetailsArray && certificateDetailsArray.map(eachObj => <CertificateCard certificateTopic={eachObj.certificateTopic} certificateInfo={eachObj.certificateInfo} certificateImageUrl={eachObj.certificateImageUrl} certificateLink={eachObj.certificateLink} key={Math.random().toString()} />)}</div>
       </div>
     </div>
   );
@@ -22,8 +22,8 @@ const Certficates = ({ arrayOfCertificates }) => {
 
 const CertificateCard = ({ certificateTopic, certificateInfo, certificateImageUrl, certificateLink }) => {
   return (
-    <motion.div className='w-full h-auto  bg-zinc-900/10 rounded-lg'>
-      <div className='overflow-hidden'>
+    <motion.div className='w-full h-max mb-auto  bg-zinc-900/10 rounded-lg'>
+      <div className='overflow-hidden lg:h-2/6'>
         <motion.img src={`${certificateImageUrl}`} alt='certificate' className='rounded-t-lg  ease-in-out duration-100 zoomer transition-all overflow-hidden' />
       </div>
       <h1 className='text-xl text-gray-200 my-4 mx-3 font-black'>{certificateTopic}</h1>

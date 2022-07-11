@@ -12,11 +12,15 @@
   scroll-behavior: smooth;
   /* overflow-y: auto; */
 }
-body {
+html {
   @apply bg-zinc-800 m-0;
 }
 .rotate {
   transform: rotate(125deg);
+}
+
+.dynamic-height {
+  height: max(40vh, 40vw);
 }
 
 .green {
@@ -77,5 +81,9 @@ body {
 .d {
   color: rgb(224, 118, 86);
   fill: red;
+}
+
+img {
+  cursor: pointer;
 }
 /* 224, 118, 86224, 118, 86  */
