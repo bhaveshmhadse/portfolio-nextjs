@@ -20,7 +20,7 @@ const ProjectsSection = () => {
   }, []);
 
   return (
-    <div className='flex w-full h-auto py-24'>
+    <div className='flex w-full h-auto pt-10 lg:pt-24'>
       <div className='h-auto w-full'>
         <SectionHeader title='Projects' />
 

@@ -39,7 +39,7 @@ const PersonalInformation = () => {
           </div>
         </motion.div>
       </div>
-      <div className='-translate-y-20'>
+      <div className='-translate-y-10'>
         <DecorativeLineSeperator />
       </div>
     </div>

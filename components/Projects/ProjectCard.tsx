@@ -9,9 +9,9 @@ import { globalSkillsHash } from "../Skills/Languages";
 import { isEven } from "../../controllers/helperFuntions";
 
 const ProjectCard = ({ index, heading, description, imageUrl, liveDemoUrl, githubUrl }: any) => {
-  let [orientation, setorientation] = useState<any[]>([<ProjectImage alignImageToLeft={index % 2 == 0} imageUrl={imageUrl} key={Math.random().toString()} />, <ProjectInfo individualProjectUrl={imageUrl} liveDemoUrl={liveDemoUrl} githubUrl={githubUrl} description={description} heading={heading} key={Math.random().toString()} />]);
+  let [orientation, setorientation] = useState<any[]>([<ProjectImage alignImageToLeft={index % 2 != 0} imageUrl={imageUrl} key={Math.random().toString()} />, <ProjectInfo addPaddingToLeft={index % 2 != 0} liveDemoUrl={liveDemoUrl} githubUrl={githubUrl} description={description} heading={heading} key={Math.random().toString()} />]);
 
-  const changeOrientation = () => (isEven(index) ? setorientation([<ProjectImage alignImageToLeft={index % 2 == 0} imageUrl={imageUrl} key={Math.random().toString()} />, <ProjectInfo individualProjectUrl={imageUrl} liveDemoUrl={liveDemoUrl} githubUrl={githubUrl} description={description} heading={heading} key={Math.random().toString()} />]) : setorientation([<ProjectInfo individualProjectUrl={imageUrl} liveDemoUrl={liveDemoUrl} githubUrl={githubUrl} description={description} heading={heading} key={Math.random().toString()} />, <ProjectImage alignImageToLeft={index % 2 == 0} imageUrl={imageUrl} key={Math.random().toString()} />]));
+  const changeOrientation = () => (isEven(index) ? setorientation([<ProjectImage alignImageToLeft={index % 2 != 0} imageUrl={imageUrl} key={Math.random().toString()} />, <ProjectInfo addPaddingToLeft={index % 2 != 0} liveDemoUrl={liveDemoUrl} githubUrl={githubUrl} description={description} heading={heading} key={Math.random().toString()} />]) : setorientation([<ProjectInfo addPaddingToLeft={index % 2 != 0} liveDemoUrl={liveDemoUrl} githubUrl={githubUrl} description={description} heading={heading} key={Math.random().toString()} />, <ProjectImage alignImageToLeft={index % 2 != 0} imageUrl={imageUrl} key={Math.random().toString()} />]));
 
   const handleOrientation = () => {
     window.innerWidth > 600 ? changeOrientation() : "";
@@ -26,7 +26,7 @@ const ProjectCard = ({ index, heading, description, imageUrl, liveDemoUrl, githu
   return (
     <div className='flex m-0 h-auto w-full items-center justify-center'>
       <div className='h-auto w-full lg:w-5/6 '>
-        <div className=' my-20 h-auto lg:my-10 mx-4 block lg:flex '>{orientation.map(eachObj => eachObj)}</div>
+        <div className='my-20 h-auto lg:my-10 mx-4 block lg:flex '>{orientation.map(eachObj => eachObj)}</div>
       </div>
     </div>
   );
@@ -34,8 +34,8 @@ const ProjectCard = ({ index, heading, description, imageUrl, liveDemoUrl, githu
 
 const ProjectImage = ({ imageUrl, alignImageToLeft }: { imageUrl: string; alignImageToLeft: any }) => {
   return (
-    <div className={`w-full lg:p-4 flex  items-center  my-10 ${alignImageToLeft ? "lg:justify-start" : "lg:justify-end"} justify-center`}>
-      <div className='  justify-start items-start h-auto lg:w-full w-11/12  flex'>
+    <div className={`w-full p-0 lg:p-4 flex items-center  my-10 ${alignImageToLeft ? "lg:justify-start" : "lg:justify-end"} justify-center`}>
+      <div className='justify-start items-start h-auto w-full flex'>
         <Link key={Math.random().toString()} href={`${imageUrl.split(".jpg").join("/")}`}>
           <img className='hover:scale-110 hover:rounded-lg  duration-300 hover:drop-shadow-2xl lg:p-2 rounded-2xl drop-shadow-lg w-full smooth-image' src={`${imageUrl}`} />
         </Link>
@@ -44,9 +44,9 @@ const ProjectImage = ({ imageUrl, alignImageToLeft }: { imageUrl: string; alignI
   );
 };
 
-const ProjectInfo = ({ heading, description, liveDemoUrl, githubUrl, individualProjectUrl }) => {
+const ProjectInfo = ({ heading, description, liveDemoUrl, githubUrl, addPaddingToLeft }) => {
   return (
-    <div key={Math.random().toString()} className='w-full  p-4 flex items-center justify-center '>
+    <div key={Math.random().toString()} className={`w-full  py-2 ${addPaddingToLeft ? "pl-4" : "px-0"}  flex items-center justify-center `}>
       <div className=' w-full'>
         <h1 className='text-5xl mb-5 green-text font-extrabold uppercase'> {heading} </h1>
         <p className='mb-4 text-justify lg:pr-4 font-bold text-gray-400 leading-loose paragraph'> {description} </p>
