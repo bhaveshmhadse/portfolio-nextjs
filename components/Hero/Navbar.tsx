@@ -29,7 +29,7 @@ const Navbar = () => {
     <div key={Math.random().toString()} style={{ background: "rgba(39, 39, 42, 0.5)" }} className='  fixed flex w-full p-2 z-50'>
       <div className='flex  w-full items-center'>
         <div className='cursor-pointer w-8 h-8 mx-2 flex items-center justify-center'>
-          <img src='bhaveshProfile.jpg' className='-rotate-90 rounded-full' alt='' />
+          <img src='profile/bhaveshmhadse.jpg' className='rounded-full' alt='' />
         </div>
       </div>
 

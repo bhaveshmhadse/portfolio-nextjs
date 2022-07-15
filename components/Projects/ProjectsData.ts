@@ -47,7 +47,7 @@ const techStackHash = {
 const getDetailedTechStackObjectArray = title => {
   return techStackHash[title].map(eachPartName => ({
     heading: eachPartName,
-    // imageUrl: "bhaveshProfile.jpg",
+    // imageUrl: "profile/bhaveshmhadse.jpg",
     imageUrl: `../skills/${eachPartName}.svg`,
     description: "This One of My projects Toy codigo Wheel Loader. As Of Dimensions are 1/38 th of Original codigo few Dimensions were of my own and remaining were from search...! There are 14-16 TechStack as follows  Rear Body, Differential, Front Body, Axle Rod, Boom Cylinder, Boom Rod, Connecting Rod, Rocker arm Cylinder, Rocker Arm Rod, Rocker Arm, Screw, BOOM, Excavator Bucket, Rim, Tyre, and 3 Minor Assembly + 1 full Assembly",
   }));

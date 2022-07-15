@@ -15,7 +15,7 @@ const AboutImage = () => {
   return (
     <motion.div key={Math.random().toString()} className='w-full p-2 lg:bg-zinc-900/40 rounded-l-2xl h-auto flex justify-center items-center lg:flex'>
       <AnimatePresence key={Math.random().toString()}>
-        <motion.img key={Math.random().toString()} animate={{ x: 0, y: [10, 0], rotate: -90 }} initial={false} className='z-20 -rotate-90 rounded-full  w-4/6' src='bhaveshProfile.jpg' />
+        <motion.img key={Math.random().toString()} animate={{ x: 0, y: [10, 0] }} initial={false} className='z-20 rounded-full  w-4/6' src='profile/bhaveshmhadse.jpg' />
         <hr className='h-24 lg:hidden border-2 border-l-2 border-zinc-700 z-10 rotate'></hr>
         <span key={Math.random().toString()} className='lg:hidden absolute z-30 text-zinc-500 font-extrabold translate-x-40 translate-y-12'>
           2001

@@ -18,7 +18,7 @@ const PersonalInformation = () => {
       <div className=' h-screen flex items-center justify-center'>
         <motion.div className=' flex lg:w-5/6  mx-2 h-screen lg:h-auto lg:-translate-y-10 z-10'>
           <div className=' justify-start items-center h-auto w-1/3 hidden  lg:flex'>
-            <AnimatePresence>{animate && <motion.img whileTap={{ scale: 0.9 }} animate={{ x: [-100, 0], y: 0, rotate: -90, opacity: 1 }} initial={{ opacity: 0 }} className='-rotate-90  p-2   rounded-full drop-shadow-lg' src='bhaveshProfile.jpg' />}</AnimatePresence>
+            <AnimatePresence>{animate && <motion.img whileTap={{ scale: 0.9 }} animate={{ x: [-100, 0], y: 0, opacity: 1 }} initial={{ opacity: 0 }} className='p-2 rounded-full drop-shadow-lg' src='profile/bhaveshmhadse.jpg' />}</AnimatePresence>
           </div>
 
           <div className='flex w-full   items-center px-2 '>
