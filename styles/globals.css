@@ -59,18 +59,17 @@ body {
 .zoomer {
   transform: scale(1);
   overflow: hidden;
-  transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.2s;
 }
 .zoomerTwo {
 }
 .zoomerTwo:hover {
   transform: scale(1.02);
   overflow: hidden;
-  transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.1s;
 }
 .zoomer:hover {
-  transform: scale(2);
-  scale: 2;
+  scale: 1.1;
 }
 
 .gr {
