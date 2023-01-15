@@ -32,8 +32,17 @@ const Footer = ({}) => {
             </div>
           </div>
           <div className='w-full font-bold text-gray-400 leading-tight paragraph text-xs'>
-            <p className="underline pb-1">©{year} Bhavesh Mhadse Designs. All rights Reserved.</p>
-            <p className="underline ">Proudly created with NextJS and tailwindcss.</p>
+            <p className='underline pb-1'>©{year} Bhavesh Mhadse Designs. All rights Reserved.</p>
+            <p className='underline '>
+              Proudly created with{" "}
+              <Link href={"https://nextjs.org/"} passHref>
+                <span className='text-gray-300 cursor-pointer'>NextJS</span>
+              </Link>{" "}
+              and{" "}
+              <Link href={"https://tailwindcss.com/"} passHref>
+                <span className='text-gray-300 cursor-pointer'>TailwindCSS</span>
+              </Link>.
+            </p>
           </div>
         </div>
         <div className='lg:w-1/2 flex flex-col items-center justify-center p-2'>
