@@ -1,12 +1,19 @@
 import { AnimatePresence, motion } from "framer-motion";
+import Footer from "../Footer/Footer";
+import DecorativeLineSeperator from "../Global/DecorativeLineSeperator";
 
 const About = () => {
   return (
+    <div>
+
     <div className='bg-zinc-800 flex w-full items-center justify-center h-full py-24'>
       <motion.div key={Math.random().toString()} className=' bg-red-00 w-11/12 h-auto flex flex-col lg:flex-row'>
         <AboutImage />
         <AboutInfo />
       </motion.div>
+    </div>
+    <DecorativeLineSeperator/>
+    <Footer/>
     </div>
   );
 };

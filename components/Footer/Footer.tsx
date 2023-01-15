@@ -52,16 +52,16 @@ const Footer = ({}) => {
               <div className='w-1/2 border-t-2 border-solid border-gray-400'></div>
             </div>
             <div className='w-full flex flex-co '>
-              <p className='text-justify lg:pr-4 font-bold text-gray-400 leading-tight paragraph text-sm pt-2 hover:text-slate-500 duration-300 hover:scale-105'>
+              <p className='pr-2 text-justify lg:pr-4 font-bold text-gray-400 leading-tight paragraph text-sm pt-2 hover:text-slate-500 duration-300 hover:scale-105'>
                 <Link href={"https://www.instagram.com/bhaaaavesh__/"}>instagram </Link>
               </p>
-              <p className='text-justify lg:pr-4 font-bold text-gray-400 leading-tight paragraph text-sm pt-2 hover:text-slate-500 duration-300 hover:scale-105'>
+              <p className='px-2 text-justify lg:pr-4 font-bold text-gray-400 leading-tight paragraph text-sm pt-2 hover:text-slate-500 duration-300 hover:scale-105'>
                 <Link href={"https://www.facebook.com/bhavesh.mhadse.7/"}>facebook </Link>
               </p>
-              <p className='text-justify lg:pr-4 font-bold text-gray-400 leading-tight paragraph text-sm pt-2 hover:text-slate-500 duration-300 hover:scale-105'>
+              <p className='px-2 text-justify lg:pr-4 font-bold text-gray-400 leading-tight paragraph text-sm pt-2 hover:text-slate-500 duration-300 hover:scale-105'>
                 <Link href={"https://github.com/bhaveshmhadse"}>github </Link>
               </p>
-              <p className='text-justify lg:pr-4 font-bold text-gray-400 leading-tight paragraph text-sm pt-2 hover:text-slate-500 duration-300 hover:scale-105'>
+              <p className='px-2 text-justify lg:pr-4 font-bold text-gray-400 leading-tight paragraph text-sm pt-2 hover:text-slate-500 duration-300 hover:scale-105'>
                 <Link href={"https://www.linkedin.com/in/bhaveshmhadse/"}>linkedin </Link>
               </p>
             </div>
