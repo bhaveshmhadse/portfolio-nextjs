@@ -10,7 +10,7 @@ const PersonalInformation = () => {
   useEffect(() => {
     setTimeout(() => {
       setanimate(true);
-    }, 1500);
+    }, 1100);
   }, []);
 
   return (
