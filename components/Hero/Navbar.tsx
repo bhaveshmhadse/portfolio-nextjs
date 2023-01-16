@@ -22,7 +22,7 @@ const Navbar = () => {
 
     setTimeout(() => {
       setshow(true);
-    }, 1500);
+    }, 1000);
   }, []);
 
   return (
